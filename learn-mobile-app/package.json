@@ -1,7 +1,7 @@
 {
-  "name": "learn-mobile-app-dev",
+  "name": "learn-mobile-app",
   "version": "1.0.0",
-  "main": "expo-router/entry",
+  "main": "index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -10,17 +10,22 @@
     "lint": "expo lint"
   },
   "dependencies": {
-    "expo": "~54.0.0",
-    "expo-status-bar": "~2.2.3",
-    "react": "19.0.0",
+    "expo": "~54.0.33",
+    "expo-constants": "~18.0.13",
+    "expo-linking": "~8.0.12",
+    "expo-router": "~6.0.23",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-native": "0.79.6",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
     "react-native-web": "^0.21.0"
   },
   "devDependencies": {
-    "@types/react": "~19.2.2",
+    "@types/react": "~19.1.0",
     "eslint": "^9.0.0",
-    "eslint-config-expo": "~55.0.1",
+    "eslint-config-expo": "~10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react-native": "^5.0.0",
