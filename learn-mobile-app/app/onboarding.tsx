@@ -13,18 +13,18 @@ export default function OnboardingScreen() {
   const router = useRouter();
   const toggleHasOnboarded = useUserStore((state) => state.toggleHasOnboarded);
   const handlePress = () => {
-    toggleHasOnboarded();
+    toggleHasOnboarded(); // Set hasFinishedOnboarding to true in the user store
     router.replace("/");
   };
 
   return (
-    <LinearGradient 
+    <LinearGradient  // Add a gradient background to the onboarding screen to make it more visually appealing
     start={{x:0, y: 0}}
     end={{x:1, y: 1}}
     colors={[theme.colorAppleGreen, theme.colorLimeGreen, theme.colorGreen]}
     
     style={styles.container}>
-        <StatusBar style="light" />
+        <StatusBar style="light" /> 
         <View>
             <Text style = {styles.heading}> Welcome Plantly! </Text>
             <Text style = {styles.tagline}> Keep your plants healthy and hydrated </Text>
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colorWhite,
     alignItems: "center",
     justifyContent: "space-evenly",
+    paddingHorizontal: 24,
   },
   heading: {
     fontSize: 42,
