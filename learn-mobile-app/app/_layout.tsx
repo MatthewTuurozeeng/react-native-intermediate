@@ -15,6 +15,16 @@ export default function Layout() {
           presentation: "modal",
         }}
       />
+      <Stack.Screen
+        name="new"
+        options={{
+          presentation: "modal",
+          title: "New plant",
+        }}
+      />
     </Stack>
+    
+
+
   );
 }
