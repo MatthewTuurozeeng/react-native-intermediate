@@ -3,6 +3,11 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import { Pressable } from "react-native";
 import { theme } from "@/theme";
 
+
+export const unstable_settings = {
+  initialRouteName: "index",
+};
+
 export default function Layout() {
   return (
     <Stack>
@@ -21,14 +26,14 @@ export default function Layout() {
           ),
         }}
        />
-       <Stack.Screen
-        name="plants/[id]" 
-        options={{ 
-            title: "", 
-            headerBackTitle: "",
-            headerTintColor: theme.colorBlack
-
-        }} />
+      <Stack.Screen
+        name="plants/[plantId]"
+        options={{
+          title: "",
+          headerBackTitle: "",
+          headerTintColor: theme.colorBlack,
+        }}
+      />
     </Stack>
   );
 }
